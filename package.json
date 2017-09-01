@@ -1,0 +1,25 @@
+{
+  "name": "component-archetype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "builder run test:unit",
+    "test:unit": "jest --config=node_modules/component-archetype/conf/jest/jest.config.js",
+    "test:unit:clean": "jest -u --config=node_modules/component-archetype/conf/jest/jest.config.js",
+    "cover:unit": "jest --coverage --config=node_modules/component-archetype/conf/jest/jest.config.js",
+    "lint": "eslint --config node_modules/component-archetype/conf/eslint/.eslintrc.js src",
+    "verify": "builder run lint && builder run cover:unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstrimpel/component-archetype.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jstrimpel/component-archetype/issues"
+  },
+  "homepage": "https://github.com/jstrimpel/component-archetype#readme",
+  "dependencies": {}
+}
